@@ -1,7 +1,7 @@
 public class Father extends Thread {
-    private BankAccount account;
-    private int depositAmount;
-    private MainUI ui;
+    private final BankAccount account;
+    private final int depositAmount;
+    private final MainUI ui;
 
     public Father(BankAccount account, int depositAmount, MainUI ui) {
         this.account = account;

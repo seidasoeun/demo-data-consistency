@@ -1,7 +1,7 @@
 public class Son extends Thread {
-    private BankAccount account;
-    private int withdrawAmount;
-    private MainUI ui;
+    private final BankAccount account;
+    private final int withdrawAmount;
+    private final MainUI ui;
 
     public Son(BankAccount account, int withdrawAmount, MainUI ui) {
         this.account = account;
