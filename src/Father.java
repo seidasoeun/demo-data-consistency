@@ -1,17 +1,17 @@
 public class Father extends Thread {
     private final BankAccount account;
-    private final int depositAmount;
+    private final int deposit;
     private final MainUI ui;
 
-    public Father(BankAccount account, int depositAmount, MainUI ui) {
+    public Father(BankAccount account, int deposit, MainUI ui) {
         this.account = account;
-        this.depositAmount = depositAmount;
+        this.deposit = deposit;
         this.ui = ui;
     }
 
     @Override
     public void run() {
-        account.deposit(depositAmount);
+        account.deposit(deposit, 0); // Father is thread 0
         ui.updateBalance(account.getBalance());
     }
 }

@@ -1,17 +1,17 @@
 public class Son extends Thread {
     private final BankAccount account;
-    private final int withdrawAmount;
+    private final int withdraw;
     private final MainUI ui;
 
-    public Son(BankAccount account, int withdrawAmount, MainUI ui) {
+    public Son(BankAccount account, int withdraw, MainUI ui) {
         this.account = account;
-        this.withdrawAmount = withdrawAmount;
+        this.withdraw = withdraw;
         this.ui = ui;
     }
 
     @Override
     public void run() {
-        account.withdraw(withdrawAmount);
+        account.withdraw(withdraw, 1); // Son is thread 1
         ui.updateBalance(account.getBalance());
     }
 }

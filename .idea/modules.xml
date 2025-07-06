@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/data-consistency.iml" filepath="$PROJECT_DIR$/data-consistency.iml" />
+      <module fileurl="file://$PROJECT_DIR$/data-inconsistency.iml" filepath="$PROJECT_DIR$/data-inconsistency.iml" />
     </modules>
   </component>
 </project>
